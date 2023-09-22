@@ -42,11 +42,11 @@ router.get("/", async (req, res) => {
 //Route to get one book by using id.
 router.get("/:id", async (req, res) => {
   try {
-    if (!req.body.title || !req.body.author || !req.body.publishYear) {
-      res
-        .status(400)
-        .send("Enter all required data : title, author, publishYear");
-    }
+    //  if (!req.body.title || !req.body.author || !req.body.publishYear) {
+    //   res
+    //     .status(400)
+    //     .send("Enter all required data : title, author, publishYear");
+    // }
 
     const id = req.params.id;
 
